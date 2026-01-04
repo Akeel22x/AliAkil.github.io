@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ali Akil | Cybersecurity Engineer</title>
+  <meta name="description" content="Ali Akil — Cybersecurity Engineer. Offensive Security, Cloud Security, CTFs, and AI-driven defense." />
+
+  <!-- OpenGraph for LinkedIn preview -->
+  <meta property="og:title" content="Ali Akil | Cybersecurity Engineer" />
+  <meta property="og:description" content="Offensive Security • Cloud Security • CTFs • AI-driven defense" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Subtle background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-text">aliakil</span>
+      <span class="muted">/</span>
+      <span class="muted">portfolio</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="btn ghost" id="themeBtn" type="button" aria-label="Toggle theme">
+        Toggle
+      </button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="chip">
+          <span class="chip-icon">▣</span>
+          <span>Cybersecurity • Offensive Security • Cloud</span>
+        </div>
+
+        <h1>
+          Ali Akil
+          <span class="h1-accent">.</span>
+        </h1>
+
+        <p class="subtitle">
+          <span class="type" id="typeText"></span><span class="cursor" aria-hidden="true">█</span>
+        </p>
+
+        <p class="desc">
+          Cybersecurity engineering student focused on penetration testing, cloud security, and building
+          practical security systems. I enjoy CTFs, real-world labs, and shipping clean tools & prototypes.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn ghost" href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">CTF</div>
+            <div class="stat-label">Competition mindset</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Cloud</div>
+            <div class="stat-label">AWS • VPN • Security</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">AI</div>
+            <div class="stat-label">Threat-aware systems</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terminal card -->
+      <div class="terminal" role="region" aria-label="Terminal preview">
+        <div class="terminal-bar">
+          <div class="lights">
+            <span class="l red"></span>
+            <span class="l yellow"></span>
+            <span class="l green"></span>
+          </div>
+          <div class="terminal-title">session://ali-akil</div>
+        </div>
+
+        <div class="terminal-body" id="terminalBody">
+          <div class="line"><span class="prompt">ali@kali</span>:<span class="path">~</span>$ whoami</div>
+          <div class="line out">ali-akil</div>
+
+          <div class="line"><span class="prompt">ali@kali</span>:<span class="path">~</span>$ cat focus.txt</div>
+          <div class="line out">offensive security · web apps · cloud hardening · vpn systems</div>
+
+          <div class="line"><span class="prompt">ali@kali</span>:<span class="path">~</span>$ echo "$CERTS"</div>
+          <div class="line out">eJPT · ICCA · OSCP (in progress)</div>
+
+          <div class="line"><span class="prompt">ali@kali</span>:<span class="path">~</span>$ _</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="muted">A quick snapshot of what I do and what I’m building.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Profile</h3>
+          <p>
+            I’m <strong>Ali Akil</strong>, a cybersecurity engineering student building hands-on security projects and
+            training through labs, CTFs, and real tooling. I enjoy practical offensive security workflows and
+            turning findings into better defensive design.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Pentesting</span>
+            <span class="pill">CTFs</span>
+            <span class="pill">Cloud Security</span>
+            <span class="pill">VPN Systems</span>
+            <span class="pill">AI Security</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Highlights</h3>
+          <ul class="list">
+            <li><span class="tick">✓</span> Strong with Linux, Kali, web security, and network analysis</li>
+            <li><span class="tick">✓</span> Comfortable with AWS, VPN deployment, and security hardening</li>
+            <li><span class="tick">✓</span> Builder mindset: ship prototypes and improve them iteratively</li>
+            <li><span class="tick">✓</span> Interested in AI-assisted detection and automated security workflows</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">Core areas I work in (and keep sharpening).</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="card skill">
+          <h3>Offensive Security</h3>
+          <p>Recon, vulnerability discovery, exploitation basics, reporting.</p>
+          <div class="tags">
+            <span>Burp</span><span>Nmap</span><span>OWASP</span><span>Web</span>
+          </div>
+        </div>
+
+        <div class="card skill">
+          <h3>Cloud & Network</h3>
+          <p>Cloud security fundamentals, VPNs, routing, monitoring.</p>
+          <div class="tags">
+            <span>AWS</span><span>WireGuard</span><span>OpenVPN</span><span>TCP/IP</span>
+          </div>
+        </div>
+
+        <div class="card skill">
+          <h3>Detection & Defense</h3>
+          <p>Log analysis, threat modeling, and practical hardening.</p>
+          <div class="tags">
+            <span>MITRE</span><span>SIEM</span><span>Threat Model</span><span>IR</span>
+          </div>
+        </div>
+
+        <div class="card skill">
+          <h3>Building</h3>
+          <p>Turning ideas into usable tools, dashboards, and systems.</p>
+          <div class="tags">
+            <span>Node</span><span>Python</span><span>APIs</span><span>Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">A few builds that represent my direction.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="card project">
+          <div class="project-top">
+            <h3>NovaVPN</h3>
+            <span class="badge">Capstone</span>
+          </div>
+          <p>
+            An AI-integrated VPN concept focused on intelligent security, privacy, and threat-aware networking.
+          </p>
+          <div class="project-meta">
+            <span>VPN</span><span>Cloud</span><span>Security</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Case Study</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-top">
+            <h3>Pentix.ai</h3>
+            <span class="badge">SaaS</span>
+          </div>
+          <p>
+            Automated pentest platform concept: scan, prioritize findings, and generate structured reports.
+          </p>
+          <div class="project-meta">
+            <span>Automation</span><span>Web</span><span>AI</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Overview</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-top">
+            <h3>CTF Writeups</h3>
+            <span class="badge">Labs</span>
+          </div>
+          <p>
+            Short writeups covering web exploitation, forensics, and enumeration workflows.
+          </p>
+          <div class="project-meta">
+            <span>Forensics</span><span>Web</span><span>Notes</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Read</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Let’s connect — internships, collaborations, or security work.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Reach me</h3>
+          <p class="muted">Update these links with your real profiles:</p>
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:aliakil22x@gmail.com">
+              <span class="k">Email</span>
+              <span class="v">aliakil22x@gmail.com</span>
+            </a>
+            <a class="contact-item" href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+              <span class="k">GitHub</span>
+              <span class="v">github.com/yourusername</span>
+            </a>
+            <a class="contact-item" href="#" target="_blank" rel="noreferrer">
+              <span class="k">LinkedIn</span>
+              <span class="v">linkedin.com/in/yourprofile</span>
+            </a>
+          </div>
+
+          <div class="note">
+            Tip: add your CV as <span class="code">/Ali_Akil_CV.pdf</span> and link it here.
+          </div>
+          <a class="btn primary" href="#" target="_blank" rel="noreferrer">Download CV</a>
+        </div>
+
+        <div class="card">
+          <h3>Quick Message</h3>
+          <p class="muted">This form uses your email app (no backend needed).</p>
+
+          <form class="form" id="mailForm">
+            <label>
+              <span>Subject</span>
+              <input type="text" id="subject" placeholder="Internship / Collaboration / Security work" required />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea id="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </label>
+
+            <button class="btn" type="submit">Open Email Draft</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <span class="mono">© <span id="year"></span> Ali Akil</span>
+        <span class="muted">•</span>
+        <span class="muted">Built on GitHub Pages</span>
+      </div>
+      <a class="to-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Top</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
