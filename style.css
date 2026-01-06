@@ -1,40 +1,114 @@
+:root {
+  --bg-main: #020617;
+  --bg-card: #0f172a;
+  --text-main: #e5e7eb;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #0f172a;
-  color: #e5e7eb;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
 }
 
-header {
+/* HERO */
+.hero {
   text-align: center;
-  padding: 60px 20px;
-  background: #020617;
+  padding: 90px 20px;
+  background: radial-gradient(circle at top, #020617, #000);
 }
 
-h1 {
-  font-size: 3rem;
+.hero h1 {
+  font-size: 3.2rem;
   margin-bottom: 10px;
 }
 
-main {
+.hero p {
+  font-size: 1.2rem;
+  color: var(--accent);
+  min-height: 1.5em;
+}
+
+/* LAYOUT */
+.container {
   max-width: 900px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.skills-grid span {
+  background: var(--bg-card);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid #1e293b;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+/* LINKS */
 a {
-  color: #38bdf8;
+  color: var(--accent);
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
-  background: #020617;
-  color: #94a3b8;
+  padding: 25px;
+  background: #000;
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
