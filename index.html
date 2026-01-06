@@ -8,91 +8,141 @@
 </head>
 
 <body>
+  <div class="glow-bg"></div>
 
   <!-- NAV BAR -->
   <nav class="nav-bar">
-    <span class="logo">Ali</span>
+    <a href="#home" class="logo">AliAkil();</a>
 
     <ul class="nav-links">
-      <li><a href="#home">&lt;Home&gt;</a></li>
-      <li><a href="#about">&lt;/AboutMe&gt;</a></li>
-      <li><a href="#certifications">&lt;/Certifications&gt;</a></li>
-      <li><a href="#achievements">&lt;/Achievements&gt;</a></li>
-      <li><a href="#skills">&lt;/Skills&gt;</a></li>
-      <li><a href="#projects">&lt;/Projects&gt;</a></li>
+      <li><a href="#home">&lt;Home /&gt;</a></li>
+      <li><a href="#about">&lt;AboutMe /&gt;</a></li>
+      <li><a href="#achievements">&lt;Achievements /&gt;</a></li>
+      <li><a href="#skills">&lt;Skills /&gt;</a></li>
+      <li><a href="#projects">&lt;Projects /&gt;</a></li>
+      <li><a href="#contact">&lt;Contact /&gt;</a></li>
     </ul>
 
-    <span class="nav-right">🌙</span>
+    <div class="nav-right">
+      <span>🌙</span>
+    </div>
   </nav>
 
   <!-- HERO -->
   <header class="hero" id="home">
-    <h1>Ali Akil</h1>
+    <h1>HelloWorld();<br>I'm <span>Ali Akil</span></h1>
     <p id="typeText"></p>
+    <a href="#about" class="cta-btn">View My Dossier</a>
   </header>
 
   <main class="container">
 
     <!-- ABOUT -->
     <section id="about">
-      <h2>About Me</h2>
+      <h2><span>/</span>AboutMe();</h2>
       <p>
-        Cybersecurity Engineering student with hands-on experience in
-        penetration testing, CTF competitions, and security research.
+        I am a Cybersecurity Engineering student dedicated to offensive security and system fortification. 
+        With hands-on experience in penetration testing and CTF competitions, I focus on uncovering 
+        vulnerabilities before they can be exploited by malicious actors.
       </p>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <p>Coming soon.</p>
     </section>
 
     <!-- ACHIEVEMENTS -->
     <section id="achievements">
-      <h2>Achievements</h2>
-      <p>Coming soon.</p>
+      <h2><span>/</span>Achievements();</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>OSCP</h3>
+          <p>Offensive Security Certified Professional. (Coming Soon)</p>
+          <div class="tags">
+            <span class="tag">Pen Testing</span>
+            <span class="tag">Offensive</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>eJPT</h3>
+          <p>Junior Penetration Tester Certification. (Coming Soon)</p>
+          <div class="tags">
+            <span class="tag">Junior</span>
+            <span class="tag">Foundations</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span>Penetration Testing</span>
-        <span>Web Application Security</span>
-        <span>Network Security</span>
-        <span>Linux & Kali Linux</span>
-        <span>CTFs & Red Teaming</span>
+      <h2><span>/</span>Skills();</h2>
+      <div class="skills-container">
+        <div class="skill-box">
+          <h4>Offensive Security</h4>
+          <ul class="skill-list">
+            <li>Penetration Testing</li>
+            <li>Web App Security</li>
+            <li>Social Engineering</li>
+            <li>Active Directory</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h4>Defensive Ops</h4>
+          <ul class="skill-list">
+            <li>Network Security</li>
+            <li>Security Auditing</li>
+            <li>Incident Response</li>
+            <li>Hardening</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h4>Tools & Tech</h4>
+          <ul class="skill-list">
+            <li>Kali Linux / Parrot OS</li>
+            <li>Burp Suite / Metasploit</li>
+            <li>Python / Bash</li>
+            <li>Wireshark / Nmap</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
+      <h2><span>/</span>Projects();</h2>
+      <div class="grid">
         <div class="card">
           <h3>NovaVPN</h3>
-          <p>
-            Security-focused VPN project with hands-on work in networking,
-            encryption, and privacy-aware system design.
-          </p>
+          <p>A security-focused VPN infrastructure with custom encryption protocols and multi-layered privacy features.</p>
+          <div class="tags">
+            <span class="tag">Networking</span>
+            <span class="tag">Encryption</span>
+            <span class="tag">Privacy</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Pentix.ai</h3>
+          <p>AI-driven vulnerability scanner concept for automated surface mapping and risk assessment.</p>
+          <div class="tags">
+            <span class="tag">AI</span>
+            <span class="tag">Cybersec</span>
+            <span class="tag">Automation</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:ali.akil@email.com">ali.akil@email.com</a></p>
-      <p>GitHub: <a href="https://github.com/Akeel22x" target="_blank">Akeel22x</a></p>
-    </section>
-
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Ali Akil</p>
+  <!-- CONTACT -->
+  <footer id="contact">
+    <h2>GetInTouch();</h2>
+    <div class="contact-links">
+      <a href="mailto:ali.akil@email.com" title="Email">✉️</a>
+      <a href="https://github.com/Akeel22x" target="_blank" title="GitHub">🐙</a>
+      <a href="#" target="_blank" title="LinkedIn">🔗</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Ali Akil | Built for the next level</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
