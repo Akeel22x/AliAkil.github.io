@@ -1,32 +1,54 @@
 const lines = [
-  "Cybersecurity Engineer | Penetration Tester",
-  "Offensive Security • Web Security",
-  "CTFs • VPN Systems • Red Teaming",
-  "Building: NovaVPN & Pentix.ai"
+  "I breach and fortify systems.",
+  "Ethical Hacker & Security Researcher.",
+  "Securing the digital frontier.",
+  "Always-on, Always protected."
 ];
 
 const typeEl = document.getElementById("typeText");
-let line = 0, char = 0, del = false;
+let lineIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 100;
 
 function type() {
-  const text = lines[line];
-
-  if (!del) {
-    typeEl.textContent = text.slice(0, ++char);
-    if (char === text.length) {
-      del = true;
-      setTimeout(type, 1200);
-      return;
-    }
+  const currentLine = lines[lineIndex];
+  
+  if (isDeleting) {
+    typeEl.textContent = currentLine.substring(0, charIndex - 1);
+    charIndex--;
+    typeSpeed = 50;
   } else {
-    typeEl.textContent = text.slice(0, --char);
-    if (char === 0) {
-      del = false;
-      line = (line + 1) % lines.length;
-    }
+    typeEl.textContent = currentLine.substring(0, charIndex + 1);
+    charIndex++;
+    typeSpeed = 100;
   }
-  setTimeout(type, del ? 40 : 60);
-}
-type();
 
-document.getElementById("year").textContent = new Date().getFullYear();
+  if (!isDeleting && charIndex === currentLine.length) {
+    isDeleting = true;
+    typeSpeed = 2000; // Pause at end
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    lineIndex = (lineIndex + 1) % lines.length;
+    typeSpeed = 500; // Pause before next line
+  }
+
+  setTimeout(type, typeSpeed);
+}
+
+// Start the typing effect
+document.addEventListener("DOMContentLoaded", () => {
+  type();
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
+
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
