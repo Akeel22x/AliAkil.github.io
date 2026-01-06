@@ -4,19 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ali Akil | Cybersecurity Engineer</title>
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
+
+  <!-- HERO -->
+  <header class="hero">
     <h1>Ali Akil</h1>
-    <p>Cybersecurity Engineer | Penetration Tester</p>
+    <p id="typeText"></p>
   </header>
 
-  <main>
-    <section>
+  <main class="container">
+
+    <!-- ABOUT -->
+    <section id="about">
       <h2>About Me</h2>
       <p>
         Cybersecurity Engineering student with hands-on experience in
@@ -24,34 +26,50 @@
       </p>
     </section>
 
-    <section>
+    <!-- SKILLS -->
+    <section id="skills">
       <h2>Skills</h2>
-      <ul>
-        <li>Penetration Testing</li>
-        <li>Web Application Security</li>
-        <li>Network Security</li>
-        <li>Linux & Kali Linux</li>
-        <li>CTFs & Red Teaming</li>
-      </ul>
+      <div class="skills-grid">
+        <span>Penetration Testing</span>
+        <span>Web Application Security</span>
+        <span>Network Security</span>
+        <span>Linux & Kali Linux</span>
+        <span>CTFs & Red Teaming</span>
+      </div>
     </section>
 
-    <section>
+    <!-- PROJECTS -->
+    <section id="projects">
       <h2>Projects</h2>
-      <p>NovaVPN, Pentix.ai, CTF Writeups</p>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>NovaVPN</h3>
+          <p>AI-assisted VPN with security-focused routing and monitoring.</p>
+        </div>
+        <div class="card">
+          <h3>Pentix.ai</h3>
+          <p>Automated penetration testing & attack-surface analysis platform.</p>
+        </div>
+        <div class="card">
+          <h3>CTF Writeups</h3>
+          <p>Hands-on exploit development, forensics & web security challenges.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <!-- CONTACT -->
+    <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:ali.akil@email.com">ali.akil@email.com</a></p>
       <p>GitHub: <a href="https://github.com/Akeel22x" target="_blank">Akeel22x</a></p>
     </section>
+
   </main>
 
   <footer>
-    <p>© 2026 Ali Akil</p>
+    <p>© <span id="year"></span> Ali Akil</p>
   </footer>
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
