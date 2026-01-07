@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,63 +9,109 @@
 </head>
 
 <body>
-  <div class="glow-bg"></div>
 
-  <!-- NAV BAR -->
+  <!-- NAVIGATION DOCK -->
   <nav class="nav-bar">
-    <a href="#home" class="logo">AliAkil();</a>
-
     <ul class="nav-links">
-      <li><a href="#home">&lt;Home /&gt;</a></li>
-      <li><a href="#about">&lt;AboutMe /&gt;</a></li>
-      <li><a href="#achievements">&lt;Achievements /&gt;</a></li>
-      <li><a href="#skills">&lt;Skills /&gt;</a></li>
-      <li><a href="#projects">&lt;Projects /&gt;</a></li>
-      <li><a href="#contact">&lt;Contact /&gt;</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li class="theme-toggle"><span id="themeBtn">🌙</span></li>
     </ul>
-
-    <div class="nav-right">
-      <span>🌙</span>
-    </div>
   </nav>
 
   <!-- HERO -->
   <header class="hero" id="home">
-    <h1>HelloWorld();<br>I'm <span>Ali Akil</span></h1>
-    <p id="typeText"></p>
-    <a href="#about" class="cta-btn">View My Dossier</a>
+    <h1 id="heroTitle">
+      <span class="auth-status">[ AUTHORIZATION_GRANTED ]</span>
+      <span class="glitch-title" data-text="ALI AKIL">ALI AKIL</span>
+    </h1>
+    <div class="hero-content-wrapper">
+      <div class="hero-text">
+        <p>
+          I am a dedicated cybersecurity professional with a strong foundation in offensive security and penetration
+          testing. Driven by a passion for ethical hacking, I build secure systems and hunt for vulnerabilities in
+          modern architectures.
+        </p>
+        <div class="hero-image-frame">
+          <div class="video-scanner"></div>
+          <img src="Ali.JPG" class="hero-profile-img" alt="Ali Akil">
+          <p class="video-status">FEED_READY // OPERATIVE_ID: ALI_AKIL</p>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main class="container">
 
     <!-- ABOUT -->
     <section id="about">
-      <h2><span>/</span>AboutMe();</h2>
-      <p>
-        I am a Cybersecurity Engineering student dedicated to offensive security and system fortification. 
-        With hands-on experience in penetration testing and CTF competitions, I focus on uncovering 
-        vulnerabilities before they can be exploited by malicious actors.
-      </p>
+      <h2><span>01</span> // ABOUT_ME</h2>
+      <div class="about-content">
+        <p>
+          I am a dedicated cybersecurity professional with a strong foundation in offensive security and penetration
+          testing.
+          I hold a bachelor’s degree in Cybersecurity Engineering and have earned industry-recognized certifications
+          including eJPT, ICCA, and CRTOM. My academic and professional background has equipped me with a solid
+          understanding of both theoretical security principles and their practical application in securing modern
+          and complex systems.
+        </p>
+        <p style="margin-top: 20px;">
+          I am continuously developing my skills by actively pursuing the OSCP certification, with a focus on advanced
+          penetration testing methodologies, exploitation techniques, and real-world attack scenarios. Driven by a
+          strong passion for ethical hacking and continuous learning, I am committed to staying ahead of evolving
+          threats while delivering effective, real-world security solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <h2><span>02</span> // CERTIFICATIONS</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-badge">
+            <img src="1*KXRcpcS4sGp4xvLjhByI7A copy.png" alt="eJPT Logo">
+          </div>
+          <p class="cert-name">eJPT</p>
+          <p class="cert-date">COMPLETED_2025</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge">
+            <img src="ICCA-badge.png" alt="ICCA Logo">
+          </div>
+          <p class="cert-name">ICCA</p>
+          <p class="cert-date">COMPLETED_2025</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge">
+            <img src="0b159df0-b74c-4c63-81f5-f0a8a515bdc1.webp" alt="CRTOM Logo">
+          </div>
+          <p class="cert-name">CRTOM</p>
+          <p class="cert-date">COMPLETED_2025</p>
+        </div>
+        <div class="cert-card pulse-card">
+          <span class="in-progress">DEPLOYING</span>
+          <div class="cert-badge">
+            <img src="images.png" alt="OSCP Logo">
+          </div>
+          <p class="cert-name">OSCP</p>
+          <p class="cert-date">EST_2026</p>
+        </div>
+      </div>
     </section>
 
     <!-- ACHIEVEMENTS -->
     <section id="achievements">
-      <h2><span>/</span>Achievements();</h2>
+      <h2><span>03</span> // Achievements</h2>
       <div class="grid">
         <div class="card">
-          <h3>OSCP</h3>
-          <p>Offensive Security Certified Professional. (Coming Soon)</p>
+          <h3>CTF Competitions</h3>
+          <p>Analyzing and documenting operational performance across international capture-the-flag events.</p>
           <div class="tags">
-            <span class="tag">Pen Testing</span>
-            <span class="tag">Offensive</span>
-          </div>
-        </div>
-        <div class="card">
-          <h3>eJPT</h3>
-          <p>Junior Penetration Tester Certification. (Coming Soon)</p>
-          <div class="tags">
-            <span class="tag">Junior</span>
-            <span class="tag">Foundations</span>
+            <span class="tag">UPCOMING_OP</span>
           </div>
         </div>
       </div>
@@ -72,33 +119,36 @@
 
     <!-- SKILLS -->
     <section id="skills">
-      <h2><span>/</span>Skills();</h2>
-      <div class="skills-container">
-        <div class="skill-box">
-          <h4>Offensive Security</h4>
-          <ul class="skill-list">
-            <li>Penetration Testing</li>
-            <li>Web App Security</li>
-            <li>Social Engineering</li>
-            <li>Active Directory</li>
+      <h2><span>03</span> // RED_TEAM_SKILLS</h2>
+      <div class="skills-grid-modern">
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h4>OFFENSIVE_OPERATIONS</h4>
+          <ul class="skill-list-clean">
+            <li>Penetration Testing (Network/Web)</li>
+            <li>Red Team Operations & Strategy</li>
+            <li>Vulnerability Research & Exploitation</li>
+            <li>Active Directory Attacks</li>
           </ul>
         </div>
-        <div class="skill-box">
-          <h4>Defensive Ops</h4>
-          <ul class="skill-list">
-            <li>Network Security</li>
-            <li>Security Auditing</li>
-            <li>Incident Response</li>
-            <li>Hardening</li>
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h4>TECHNICAL_TOOLSET</h4>
+          <ul class="skill-list-clean">
+            <li>Linux Exploitation & Hardening</li>
+            <li>Python for Security Automation</li>
+            <li>VPN & Tunneling Architectures</li>
+            <li>Cloud Security Assessment</li>
           </ul>
         </div>
-        <div class="skill-box">
-          <h4>Tools & Tech</h4>
-          <ul class="skill-list">
-            <li>Kali Linux / Parrot OS</li>
-            <li>Burp Suite / Metasploit</li>
-            <li>Python / Bash</li>
-            <li>Wireshark / Nmap</li>
+        <div class="skill-card">
+          <div class="skill-icon">🎯</div>
+          <h4>METHODOLOGIES</h4>
+          <ul class="skill-list-clean">
+            <li>OSINT & Reconnaissance</li>
+            <li>Privilege Escalation Techniques</li>
+            <li>Post-Exploitation Frameworks</li>
+            <li>Social Engineering Simulation</li>
           </ul>
         </div>
       </div>
@@ -106,24 +156,24 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h2><span>/</span>Projects();</h2>
+      <h2><span>05</span> // PROJECTS</h2>
       <div class="grid">
-        <div class="card">
-          <h3>NovaVPN</h3>
-          <p>A security-focused VPN infrastructure with custom encryption protocols and multi-layered privacy features.</p>
-          <div class="tags">
-            <span class="tag">Networking</span>
-            <span class="tag">Encryption</span>
-            <span class="tag">Privacy</span>
+        <div class="card featured-project-card">
+          <div class="project-image-container">
+            <img src="NovaVPN.jpeg" alt="NovaVPN" class="project-img">
           </div>
-        </div>
-        <div class="card">
-          <h3>Pentix.ai</h3>
-          <p>AI-driven vulnerability scanner concept for automated surface mapping and risk assessment.</p>
-          <div class="tags">
-            <span class="tag">AI</span>
-            <span class="tag">Cybersec</span>
-            <span class="tag">Automation</span>
+          <div class="project-info">
+            <h3 class="featured-project-title">NovaVPN</h3>
+            <p>An AI-integrated virtual private network designed to enhance user privacy and security through
+              intelligent
+              traffic analysis and adaptive protection. It combines secure tunneling with real-time monitoring to detect
+              suspicious activity, optimize routing, and improve connection reliability. Built with a focus on usability
+              and performance, NovaVPN delivers modern, threat-aware networking for everyday users and professionals
+              alike.</p>
+            <div class="tags">
+              <span class="tag">NETWORK_OP</span>
+              <span class="tag">ENCRYPT_v2</span>
+            </div>
           </div>
         </div>
       </div>
@@ -131,18 +181,47 @@
 
   </main>
 
+  <!-- CHATBOT -->
+  <div class="chat-launcher" id="chatLauncher">
+    <svg viewBox="0 0 24 24">
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+    </svg>
+  </div>
+
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <h4>ALI_AKIL // TACTICAL_AI</h4>
+      <span class="chat-close" id="chatClose">×</span>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="msg bot">
+        SYSTEM: Hi! I'm Ali's virtual assistant. How can I assist you today?
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Enter command...">
+      <button id="chatSend">EXECUTE</button>
+    </div>
+  </div>
+
   <!-- CONTACT -->
   <footer id="contact">
-    <h2>GetInTouch();</h2>
-    <div class="contact-links">
-      <a href="mailto:ali.akil@email.com" title="Email">✉️</a>
-      <a href="https://github.com/Akeel22x" target="_blank" title="GitHub">🐙</a>
-      <a href="#" target="_blank" title="LinkedIn">🔗</a>
+    <div class="footer-content">
+      <div class="contact-links">
+        <a href="mailto:aliakil22x@gmail.com" title="SECURE_MAIL">✉️</a>
+        <a href="https://github.com/Akeel22x" target="_blank" title="REPO_ACCESS">🐙</a>
+        <a href="https://www.linkedin.com/in/ali-akil1" target="_blank" title="LINKEDIN_INTEL">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
+            style="width: 24px; vertical-align: middle; filter: brightness(0) invert(1);">
+        </a>
+      </div>
+      <div class="sys-info">
+        ALI_AKIL // BUILT_FOR_NEXT_LEVEL
+      </div>
     </div>
-    <p class="copyright">© <span id="year"></span> Ali Akil | Built for the next level</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
